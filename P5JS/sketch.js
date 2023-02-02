@@ -1,3 +1,5 @@
+//Mola
+
 let t=0;
 let p1;
 let p2;
@@ -14,11 +16,12 @@ function setup() {
 function draw() {
   // put drawing code here
   background(25);
-  x=200+cos(t)*120;
-  y=200//200+sin(t)*120;
+  x=200+cos(t)*178;
+  y=200+sin(t)*120;
   p1.display();
   p2.display();
   p2.x=400-p2.width;
+  
 
   circle(x,y,20);
   t+=0.1;
@@ -29,7 +32,7 @@ function draw() {
 class Paleta {
   constructor() {
     this.x = 0;
-    this.y =200/2;
+    this.y =150;
     this.width = 15;
     this.height = 80;
     this.speed = 1;
